@@ -4,4 +4,95 @@
     box-sizing: border-box;
     font-family: Roboto;
     font-size: 16px;
+    list-style: none;
+    text-decoration: none;
 }
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+.header .container{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.container{
+    max-width: 1024px;
+    padding: 1rem;
+    
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo__text{
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: #fff;
+
+}
+
+.text--bold{
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.nav__lista{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav__link {
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255)
+  }
+  
+  .nav__item:hover .nav__link {
+    color: #2ee3e3;
+  }
+
+.hero{
+    position: relative;
+    
+    background-image: url('https://images2.alphacoders.com/119/thumb-1920-1191759.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000061;
+  }
+
+  .hero .container {
+    position: relative;
+    height: 500px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero_title {
+    font-size: 1.75rem;
+    margin: 0;
+    margin-bottom: 16px;
+  }
